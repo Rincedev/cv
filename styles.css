@@ -1,0 +1,19 @@
+body {
+  font-family: 'Poppins', sans-serif;
+}
+h1, h2, h3 {
+  font-family: 'Roboto', sans-serif;
+}
+span {
+  font-style: italic;
+}
+.page-rows img {
+  height: 500px; 
+  object-fit: cover; 
+}
+@media screen and (max-width: 768px) { 
+  .page-rows img {
+    height: 400px; 
+    object-fit: cover; 
+  }
+}
