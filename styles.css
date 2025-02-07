@@ -32,6 +32,9 @@ h1, h2, h3 {
   top: 0;
   left: 0;
 }
+.text-carousel {
+  padding-left: 11rem;
+}
 @media screen and (max-width: 768px) { 
   .row .col-md-6 {
     border-right: none;
@@ -39,6 +42,7 @@ h1, h2, h3 {
   }
   .text-carousel {
     height: 350px;
+    padding-left: 3rem;
   }
   .page-rows img {
     height: 350px; 
