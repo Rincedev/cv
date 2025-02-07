@@ -33,7 +33,7 @@
 
   <body class="bg-light w-100">
     <header class="bg-dark text-light p-4">
-      <header class="bg-dark text-light py-4">
+      
         <div
           class="container d-flex flex-column align-items-center text-center"
         >
@@ -106,11 +106,11 @@
         >
           Voir plus
         </button>
-      </header>
+      
     </header>
     <main>
       <div class="row align-items-center m-0">
-        <div class="col-md-6 p-5 text-end">
+        <div class="col-md-6 order-md-1 order-2 p-5 text-end">
           <h3>Soft Skills</h3>
           <ul class="list-unstyled">
             <li>
@@ -141,15 +141,21 @@
           </ul>
         </div>
 
-        <div class="col-md-6 p-5 text-md-start">
+        <div class="col-md-6 p-5 order-md-2 text-md-start">
           <h3>Hard Skills</h3>
           <ul class="list-unstyled">
             <li class="bi bi-pc-display-horizontal">
               HTML, CSS (Bootstrap, Pico), JavaScript, REACT
             </li>
-            <li class="bi bi-hdd-rack-fill">Node.js (Express), EJS</li>
-            <li class="bi bi-database-fill">SQL, PostgreSQL, MySQL</li>
-            <li class="bi bi-git">Git, Github</li>
+            <li class="bi bi-hdd-rack-fill"> 
+              Node.js (Express), EJS
+            </li>
+            <li class="bi bi-database-fill"> 
+              SQL, PostgreSQL, MySQL
+            </li>
+            <li class="bi bi-git"> 
+              Git, Github
+            </li>
             <li class="bi bi-buildings-fill">
               Déploiement (GitHub Pages, Railway)
             </li>
@@ -282,6 +288,67 @@
         </button>
       </div>
 
+      <div class="container py-5">
+        <h3 class="text-center mb-5">Mes Centres d'Intérêt</h3>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="d-flex align-items-center">
+              <div
+                class="timeline-icon bg-primary text-white rounded-circle d-flex justify-content-center align-items-center">
+                
+                <i class="bi bi-controller"></i>
+              </div>
+              <div class="timeline-content ms-3">
+                <h5 class="m-0 pt-4">Jeux vidéo</h5>
+                <p>ARPG, Rogue-lite, Gestion</p>
+              </div>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="d-flex align-items-center">
+              <div
+                class="timeline-icon bg-warning text-white rounded-circle d-flex justify-content-center align-items-center"
+                
+              >
+                <i class="bi bi-brush"></i>
+              </div>
+              <div class="timeline-content ms-3">
+                <h5 class="m-0 pt-4">Modélisme</h5>
+                <p>Warhammer 40k</p>
+              </div>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="d-flex align-items-center">
+              <div
+                class="timeline-icon bg-danger text-white rounded-circle d-flex justify-content-center align-items-center"
+                
+              >
+                <i class="bi bi-trophy"></i>
+              </div>
+              <div class="timeline-content ms-3">
+                <h5 class="m-0 pt-4">E-sport</h5>
+                <p>League of Legends, Valorant, Counter-Strike</p>
+              </div>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="d-flex align-items-center">
+              <div
+                class="timeline-icon bg-success text-white rounded-circle d-flex justify-content-center align-items-center"
+                
+              >
+                <i class="bi bi-headphones"></i>
+              </div>
+              <div class="timeline-content ms-3">
+                <h5 class="m-0 pt-4">Musique</h5>
+                <p>Rap francophone, Techno, Métal</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div class="bg-secondary p-5">
         <h3 class="text-center mb-4 text-light">Formations</h3>
         <div class="row row-cols-1 row-cols-md-3 g-4 m-0">
@@ -323,6 +390,7 @@
           </div>
         </div>
       </div>
+
     </main>
   </body>
 </html>
