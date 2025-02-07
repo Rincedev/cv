@@ -19,6 +19,9 @@ span {
     border-right: none;
     border-bottom: 2px solid #ccc;
   }
+  .text-carousel {
+    height: 300px;
+  }
   .page-rows img {
     height: 300px; 
     object-fit: cover; 
