@@ -4,18 +4,16 @@ body {
 h1, h2, h3 {
   font-family: 'Roboto', sans-serif;
 }
-span {
-  font-style: italic;
-}
 .page-rows img {
   height: 500px; 
   object-fit: cover; 
 }
-#softskills {
+.row .col-md-6 {
   border-right: 2px solid #ccc;
+  
 }
 @media screen and (max-width: 768px) { 
-  #softskills {
+  .row .col-md-6 {
     border-right: none;
     border-bottom: 2px solid #ccc;
   }
