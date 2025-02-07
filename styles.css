@@ -11,9 +11,16 @@ span {
   height: 500px; 
   object-fit: cover; 
 }
+#softskills {
+  border-right: 2px solid #ccc;
+}
 @media screen and (max-width: 768px) { 
+  #softskills {
+    border-right: none;
+    border-bottom: 2px solid #ccc;
+  }
   .page-rows img {
-    height: 400px; 
+    height: 300px; 
     object-fit: cover; 
   }
 }
