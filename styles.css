@@ -47,6 +47,10 @@ h1, h2, h3 {
 #backToTop {
   z-index: 1000;
 }
+.img-fluid.rounded-circle {
+  width: 200px;
+  height: 200px;
+}
 @media screen and (max-width: 768px) { 
   .row .col-md-6 {
     border-right: none;
