@@ -4,6 +4,10 @@ body {
 h1, h2, h3 {
   font-family: 'Roboto', sans-serif;
 }
+#p-p {
+  border: 12px solid #555;
+  box-shadow: #ccc 0px 0px 4px 10px;
+}
 .page-rows img {
   height: 500px; 
   object-fit: cover; 
