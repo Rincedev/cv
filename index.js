@@ -3,17 +3,19 @@ document.addEventListener("DOMContentLoaded", function () {
   const toggleButton = document.querySelector("[data-bs-target='#moreText']");
 
   toggleButton.addEventListener("click", function () {
-    if (moreText.classList.contains("show")) {
+    if (moreText.classList.contains("show-more")) {      
       toggleButton.textContent = "Voir plus";
-    } else {
+      moreText.classList.toggle("show-more");
+    } else {      
       toggleButton.textContent = "Voir moins";
+      moreText.classList.add("show-more");
+
     }
   });
-});
 
-document.getElementById("year").textContent = new Date().getFullYear();
+  document.getElementById("year").textContent = new Date().getFullYear();
 
-const backToTop = document.getElementById("backToTop");
+  const backToTop = document.getElementById("backToTop");
 
   window.addEventListener("scroll", () => {
     if (window.scrollY > 200) {
@@ -26,3 +28,7 @@ const backToTop = document.getElementById("backToTop");
   backToTop.addEventListener("click", () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   });
+
+
+});
+
