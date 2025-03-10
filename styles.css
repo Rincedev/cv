@@ -1,21 +1,31 @@
 body {
   font-family: 'Poppins', sans-serif;
+  /* Taille de police minimum pour la lisibilité */
+  font-size: 16px;
+  line-height: 1.5;
 }
-h1, h2, h3 {
+
+h1,
+h2,
+h3 {
   font-family: 'Roboto', sans-serif;
 }
+
 #p-p {
   border: 12px solid #555;
   box-shadow: #ccc 0px 0px 4px 10px;
 }
+
 .page-rows img {
-  height: 500px; 
-  object-fit: cover; 
+  height: 500px;
+  object-fit: cover;
 }
+
 .row .col-md-6 {
   border-right: 2px solid #ccc;
-  
+
 }
+
 .timeline {
   position: relative;
   padding-left: 50px;
@@ -35,37 +45,94 @@ h1, h2, h3 {
   position: relative;
   top: 0;
   left: 0;
-  width: 40px;
-  height: 40px;
+  width: 44px;
+  /* Augmenté pour une meilleure zone de clic */
+  height: 44px;
   line-height: 1;
   display: flex;
   justify-content: center;
   align-items: center;
-  aspect-ratio: 1 / 1; 
+  aspect-ratio: 1 / 1;
 
 }
+
 .text-carousel {
-  padding-left: 11rem;  
+  padding-left: 11rem;
 }
 
 #backToTop {
   z-index: 1000;
+  /* Amélioration de la visibilité */
+  background-color: rgba(0, 123, 255, 0.9);
+  color: #fff;
+  border: 2px solid #fff;
+  min-width: 44px;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
 .img-fluid.rounded-circle {
   width: 200px;
   height: 200px;
 }
-@media screen and (max-width: 768px) { 
+
+@media screen and (max-width: 768px) {
   .row .col-md-6 {
     border-right: none;
     border-bottom: 2px solid #ccc;
   }
+
   .text-carousel {
     height: 350px;
     padding-left: 3rem;
   }
+
   .page-rows img {
-    height: 350px; 
-    object-fit: cover; 
+    height: 350px;
+    object-fit: cover;
   }
+
+  /* Ajustements pour les interactions tactiles */
+  button,
+  .btn,
+  a {
+    padding: 12px;
+  }
+}
+
+/* Amélioration de la visibilité du focus */
+:focus {
+  outline: 3px solid #007bff;
+  outline-offset: 2px;
+}
+
+/* Style spécifique pour le focus sur les boutons */
+button:focus,
+a:focus {
+  outline: 3px solid #007bff;
+  outline-offset: 2px;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+}
+
+/* Taille minimum pour les zones cliquables */
+button,
+.btn,
+a {
+  min-height: 44px;
+  min-width: 44px;
+  padding: 8px;
+}
+
+/* Style pour le skip link */
+.visually-hidden-focusable:focus {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1100;
+  background: #fff;
+  padding: 1rem;
+  border: 2px solid #007bff;
 }
